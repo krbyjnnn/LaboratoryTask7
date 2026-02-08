@@ -1,0 +1,130 @@
+.bento-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.box {
+    background: white;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.header-photo { 
+    grid-column: span 1;
+    height: 180px;      
+    overflow: hidden;
+    padding: 0;
+}
+
+.photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-info-logo { 
+    grid-column: span 3; 
+    height: 180px;      
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 15px 30px; 
+    position: relative;
+}
+
+.identity h2 {
+    margin-top: 0;
+    line-height: 1;
+}
+
+.logo-img {
+    height: 80px;       
+    width: auto;        
+    align-self: center;
+}
+
+.header-buttons {
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-fake {
+    padding: 5px 15px;
+    background: #ffffff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #000;
+    text-transform: uppercase;
+    cursor: default;
+    user-select: none;
+}
+
+.about { grid-column: span 4; }
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.about-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000;
+    margin: 0;  
+}
+
+.skills { grid-column: span 1; }
+
+.skill-label {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #777;
+    text-transform: uppercase;
+    margin: 10px 0 5px 0;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag {
+    padding: 3px 8px;
+    background: #f0f0f0;
+    border: 1px solid #000;
+    border-radius: 6px;
+    font-size: 0.75rem;
+}
+
+.experience { grid-column: span 3; }
+.hobbies { grid-column: span 2; grid-row: span 2; }
+
+.hobbies-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hobbies-list li {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.projects { grid-column: span 2; }
+.certificates { grid-column: span 2; }
